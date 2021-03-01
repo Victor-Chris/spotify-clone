@@ -1,4 +1,7 @@
 import React from 'react';
+import Body from '../body/Body';
+import Sidebar from '../sidebar/Sidebar';
+import Footer from '../footer/Footer';
 import './Player.css';
 
 const Player: React.FC<{spotify: {}}> = () => {
@@ -6,9 +9,12 @@ const Player: React.FC<{spotify: {}}> = () => {
         <div className='player'>
             <div className="player__body">
                 {/**Sidebar */}
+                <Sidebar />
                 {/**Body */}
+                <Body />
             </div>
             {/**Footer */}
+            <Footer />
         </div>
     )
 }
