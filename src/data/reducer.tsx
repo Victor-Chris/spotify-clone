@@ -1,4 +1,5 @@
 import { my_token } from '../client_id';
+//const my_token: string = '';
 
 interface State {
     user: null,
@@ -28,6 +29,11 @@ const reducer = (state: any, action: any) => {
             return {
                 ...state,
                 token: action.token
+            };
+        case 'SET_PLAYLISTS':
+            return {
+                ...state,
+                playlists: action.playlists
             }
         default:
             return state;
