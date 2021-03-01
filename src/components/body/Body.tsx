@@ -1,10 +1,11 @@
 import React from 'react';
+import Header from '../header/Header';
 import './Body.css';
 
-const Body: React.FC<{}> = () => {
+const Body: React.FC<{ spotify?: any }> = (spotify) => {
     return (
         <div className='body'>
-            <h2>Body</h2>  
+            <Header spotify={spotify}/> 
         </div>
     )
 }
